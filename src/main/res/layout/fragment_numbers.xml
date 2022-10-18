@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumbersFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_guidelinehr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.00"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/numbersRV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/right_guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw ?"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/top_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/right_guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generator"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generate"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/history"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@id/top_guideline" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        app:layout_constraintBottom_toTopOf="@id/center_guidelinehr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@id/generator" />
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@mipmap/reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/mute"
+        app:layout_constraintStart_toStartOf="@id/right_guideline"
+        app:layout_constraintTop_toBottomOf="@id/center_guidelinehr" />
+
+<!--    <Button-->
+<!--        android:id="@+id/mute"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="M"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toEndOf="@id/reset"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/center_guidelinehr" />-->
+
+    <CheckBox
+        android:id="@+id/mute"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sl_favourite_24dp"
+        android:button="@drawable/sl_favourite_24dp"
+
+        android:buttonTint="#00000000"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reset"
+        app:layout_constraintTop_toBottomOf="@id/center_guidelinehr" />
+
+<!--    <Button-->
+<!--        android:id="@+id/button_first"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/next"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textview_first" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>
