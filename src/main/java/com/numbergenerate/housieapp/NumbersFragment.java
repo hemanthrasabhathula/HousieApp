@@ -1,4 +1,4 @@
-package me.rasabattula.housieapp;
+package com.numbergenerate.housieapp;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -19,14 +19,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Locale;
 import java.util.TreeMap;
 
-import me.rasabattula.housieapp.databinding.FragmentNumbersBinding;
-import me.rasabattula.housieapp.model.HousieNumber;
-import me.rasabattula.housieapp.service.NumberGenerator;
-import me.rasabattula.housieapp.view.RecyclerViewAdapter;
+import com.numbergenerate.housieapp.databinding.FragmentNumbersBinding;
+import com.numbergenerate.housieapp.model.HousieNumber;
+import com.numbergenerate.housieapp.service.NumberGenerator;
+import com.numbergenerate.housieapp.view.RecyclerViewAdapter;
 
 public class NumbersFragment extends Fragment {
 

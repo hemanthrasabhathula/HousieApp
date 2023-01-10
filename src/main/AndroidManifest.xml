@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.rasabattula.housieapp">
+    package="com.numbergenerate.housieapp">
 
     <application
         android:allowBackup="true"
@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".BaseActivity"></activity>
+        <activity android:name="com.numbergenerate.housieapp.BaseActivity"></activity>
         <activity
-            android:name=".HistoryActivity"
+            android:name="com.numbergenerate.housieapp.HistoryActivity"
             android:label="@string/title_activity_history"
             android:screenOrientation="sensorLandscape"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.numbergenerate.housieapp.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="sensorLandscape"

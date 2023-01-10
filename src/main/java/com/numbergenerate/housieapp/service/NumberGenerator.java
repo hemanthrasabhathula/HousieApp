@@ -1,4 +1,4 @@
-package me.rasabattula.housieapp.service;
+package com.numbergenerate.housieapp.service;
 
 import android.os.Build;
 import android.util.Log;

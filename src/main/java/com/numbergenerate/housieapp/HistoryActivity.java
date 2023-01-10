@@ -1,23 +1,15 @@
-package me.rasabattula.housieapp;
+package com.numbergenerate.housieapp;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.util.Log;
-import android.view.View;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
 import java.util.ArrayList;
 
-import me.rasabattula.housieapp.databinding.ActivityHistoryBinding;
+import com.numbergenerate.housieapp.databinding.ActivityHistoryBinding;
 
 public class HistoryActivity extends BaseActivity  {
 

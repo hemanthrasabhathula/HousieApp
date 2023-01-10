@@ -1,4 +1,4 @@
-package me.rasabattula.housieapp;
+package com.numbergenerate.housieapp;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,7 +15,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import me.rasabattula.housieapp.databinding.FragmentSecondBinding;
+import com.numbergenerate.housieapp.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
 

@@ -1,4 +1,4 @@
-package me.rasabattula.housieapp;
+package com.numbergenerate.housieapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 

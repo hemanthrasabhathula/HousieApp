@@ -1,4 +1,4 @@
-package me.rasabattula.housieapp.view;
+package com.numbergenerate.housieapp.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,8 +15,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 import java.util.TreeMap;
 
-import me.rasabattula.housieapp.model.HousieNumber;
-import me.rasabattula.housieapp.R;
+import com.numbergenerate.housieapp.model.HousieNumber;
+import com.numbergenerate.housieapp.R;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
 

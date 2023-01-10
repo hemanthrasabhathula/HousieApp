@@ -1,4 +1,4 @@
-package me.rasabattula.housieapp.model;
+package com.numbergenerate.housieapp.model;
 
 public class HousieNumber {
 
