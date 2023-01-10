@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "me.rasabattula.housieapp"
+        applicationId "com.numbergenerate.housieapp"
         minSdkVersion 19
         targetSdkVersion 31
         versionCode 1

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name="com.numbergenerate.housieapp.BaseActivity"></activity>
+        <activity android:name="com.numbergenerate.housieapp.BaseActivity" />
         <activity
             android:name="com.numbergenerate.housieapp.HistoryActivity"
             android:label="@string/title_activity_history"
